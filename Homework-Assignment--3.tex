@@ -1,0 +1,147 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{Homework Assignment \#3 - Distributional Consequences of Climate
+Policy}
+\author{Daija Odom}
+\date{5/2/2022}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Homework Assignment \#3 - Distributional Consequences of Climate Policy},
+  pdfauthor={Daija Odom},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+\textbf{1. One kWh of electricity emits 0.85 pounds of CO\_2\_. Assuming
+that the interim SCC correctly reflects the total social cost of one
+metric ton of CO\_2\_, what is the marginal externality cost per kWh of
+electricity?}
+
+MEC = \$ 1.97/kWh
+
+\textbf{2. What is the aggregate monthly demand curve for electricity?
+What is the supply curve for electricity? What is the ``benefit'' to
+consumers under the status quo? What is the ``benefit'' to producers
+under the status quo? What is the environmental cost under the status
+quo?}
+
+By computing the aggregate demand demand for both low and high income
+consumers, I solved for the free market equilibrium quantity of
+electricity demanded \ensuremath{5.3671947\times 10^{5}}kWh for an
+electricity price of 10 cents.
+
+\textbf{3. How is the current consumer benefit divided between ``high''
+and ``low'' income consumers?}
+
+\begin{verbatim}
+## Warning: Removed 4 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Removed 26 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{Homework-Assignment--3_files/figure-latex/unnamed-chunk-9-1.pdf}
+\textbf{4. Derive the optimal tax in cents per kWh using the interim
+SCC. Noting that recent research has shown the poor face a
+disproportionate share of the impacts from climate change, assume that
+the climate externality is borne entirely by the ``low'' income group.
+What would be the effects of this tax on: (a) The amount of electricity
+produced and consumed, (b) The price of electricity, (c) Overall welfare
+of the ``high'' income consumers, (d) Overall welfare of ``low'' income
+consumers, (e) Power suppliers (i.e., electricity producers), (f) Total
+environmental damage, (g) Total tax revenue generated? }
+
+\textbf{5. Now, assume that all revenue from the electricity tax will be
+redistributed to the consumers in proportion to their pre-tax
+consumption. For example, if 80\% of the electricity was consumer by
+``high'' income consumers, then they get 80\% of the tax revenue.
+Additionally, consider the fact that current scientific evidence
+suggests the true SCC may be much higher than \$51. For a range of SCC
+values (\$51, \$75, \$100, \$125, and \$150 per metric ton of CO\_2\_),
+calculate the effects of an SCC-based electricity tax on: (a) Overall
+welfare of ``high'' income consumers, (b) Overall welfare of ``low''
+income consumers, (c) Electricity producers.}
+
+\textbf{6.Suppose the ``high'' income group has access to expensive home
+solar generation. This lowers the electricity demand curve for the
+``high'' income group by half (vertically). Under this new demand: (a)
+What is the total electricity consumption, (b) What is the total
+environmental externality, (c) What market value of the electricity tax
+makes the total environmental damage the same as the damage when solar
+panels are available to the high income group?}
+
+\end{document}
